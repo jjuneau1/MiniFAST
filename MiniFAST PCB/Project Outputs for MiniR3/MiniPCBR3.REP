@@ -1,0 +1,136 @@
+*************************************************************
+FileName = MiniPCBR3.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\matrix\matrix
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\profile
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\stephdr
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_overlay\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_overlay\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_paste\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_paste\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_solder\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_solder\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_layer\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\top_layer\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\gnd\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\gnd\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\pwr\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\pwr\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_layer\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_layer\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_solder\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_solder\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_paste\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_paste\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_overlay\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\bottom_overlay\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\drill\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\drill\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\drill\tools
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\keep-out_layer\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\keep-out_layer\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m1_board_outline\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m1_board_outline\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m2_board_dimensions\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m2_board_dimensions\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m3_3d_step_top\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m3_3d_step_top\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m4_3d_step_bottom\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m4_3d_step_bottom\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m5_assembly_top\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m5_assembly_top\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m6_assembly_bottom\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m6_assembly_bottom\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m8_lpkf_text_bottom\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m8_lpkf_text_bottom\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m9_title_sheet\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m9_title_sheet\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m10_fab_notes\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m10_fab_notes\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m11_gerber_information\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m11_gerber_information\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m12_stackup\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m12_stackup\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m13_component_bodies_top\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m13_component_bodies_top\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m14_component_bodies_bottom\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m14_component_bodies_bottom\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m15_courtyards_top\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m15_courtyards_top\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m16_courtyards_bottom\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m16_courtyards_bottom\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m17_board_outline\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\m17_board_outline\attrlist
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\comp_+_bot\features
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\layers\comp_+_bot\components
+
+Generated File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\Project Outputs for MiniR3\odb\steps\pcb\eda\data
+

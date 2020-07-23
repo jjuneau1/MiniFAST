@@ -1,0 +1,97 @@
+Protel Design System Design Rule Check
+PCB File : C:\Jill\Miniscope Redesign\Miniscope Redesign Rev 3\PCB_Project\MiniPCBR3.PcbDoc
+Date     : 9/17/2019
+Time     : 11:58:53 AM
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 5mil) Between Via (342.913mil,393.701mil) from Top Layer to Bottom Layer And Pad U3-33(387.126mil,344.469mil) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Via (385.2mil,317.6mil) from Top Layer to Bottom Layer And Pad U3-33(387.126mil,344.469mil) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Via (388.85mil,365.84mil) from Top Layer to Bottom Layer And Pad U3-33(387.126mil,344.469mil) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Via (377.626mil,394.411mil) from Top Layer to Bottom Layer And Pad U3-33(387.126mil,344.469mil) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Via (342.913mil,344.488mil) from Top Layer to Bottom Layer And Pad U3-33(387.126mil,344.469mil) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Via (346.35mil,293.08mil) from Top Layer to Bottom Layer And Pad U3-33(387.126mil,344.469mil) on Bottom Layer 
+Rule Violations :6
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Track (449.548mil,768.68mil)(463.352mil,782.484mil) on Top Layer And Pad U1-86-L10(463.352mil,782.484mil) on Top Layer Location : [X = 3788.102mil][Y = 2750.234mil]
+   Violation between Short-Circuit Constraint: Between Track (368.862mil,813.984mil)(383.15mil,799.696mil) on Top Layer And Pad U1-61-H11(368.862mil,813.984mil) on Top Layer Location : [X = 3698.11mil][Y = 2781.734mil]
+Rule Violations :2
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Un-Connected Pin Constraint ( (All) )
+   Violation between Un-Connected Pin Constraint: Pad U6-5(512.062mil,131.542mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U6-6(531.747mil,131.542mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U6-3(531.747mil,241.778mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-113-P9(557.842mil,750.994mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-112-P8(557.842mil,719.494mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-111-P7(557.842mil,687.994mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-101-N5(526.342mil,625.004mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-102-N6(526.342mil,656.504mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-103-N7(526.342mil,687.994mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-104-N8(526.342mil,719.494mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-105-N9(526.342mil,750.994mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-77-L1(463.352mil,499.024mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-78-L2(463.352mil,530.514mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-65-J11(400.362mil,813.984mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-53-F10(305.872mil,782.484mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-110-P6(557.842mil,656.504mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-109-P5(557.842mil,625.004mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-76-K11(431.852mil,813.984mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-49-E11(274.372mil,813.984mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-26-C10(211.382mil,782.484mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U1-18-C2(211.382mil,530.514mil) on Top Layer 
+Rule Violations :21
+
+Processing Rule : Width Constraint (Min=5mil) (Max=100mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=5mil) (MaxHoleWidth=28mil) (PreferredHoleWidth=10mil) (MinWidth=14mil) (MaxWidth=50mil) (PreferedWidth=22mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (OnLayer('GND'))
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (OnLayer('PWR'))
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=5mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=5mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=5mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=1mil) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=39.37mil) (Disabled)(InNetClass('DIN[0..11]'))
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 5mil, Vertical Gap = 5mil ) (All),(All) 
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+
+Violations Detected : 29
+Time Elapsed        : 00:00:01

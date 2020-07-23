@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=Serializer_SystemR3.SchDoc
+Record=SheetSymbol|SourceDocument=Serializer_SystemR3.SchDoc|Designator=CMOS Sensor|SchDesignator=CMOS Sensor|FileName=Image_SensorR3.SchDoc|SymbolType=Normal|RawFileName=Image_SensorR3.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Serializer_SystemR3.SchDoc|Designator=LED Driver|SchDesignator=LED Driver|FileName=LED_DriverR3.SchDoc|SymbolType=Normal|RawFileName=LED_DriverR3.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Serializer_SystemR3.SchDoc|Designator=Power|SchDesignator=Power|FileName=PowerR3.SchDoc|SymbolType=Normal|RawFileName=PowerR3.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Serializer_SystemR3.SchDoc|Designator=Serializer|SchDesignator=Serializer|FileName=SerializerR3.Sch|SymbolType=Normal|RawFileName=SerializerR3.Sch|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
