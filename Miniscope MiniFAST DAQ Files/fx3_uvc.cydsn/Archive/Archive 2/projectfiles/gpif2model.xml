@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GPIFIIModel version="3">
+  <InterfaceDefination>
+    <InterfaceSetting>
+      <I2SEnabled>False</I2SEnabled>
+      <I2CEnabled>True</I2CEnabled>
+      <SPIEnabled>True</SPIEnabled>
+      <I2SEnabled>False</I2SEnabled>
+      <ADMuxedEnabled>False</ADMuxedEnabled>
+      <InterfaceType>Slave</InterfaceType>
+      <CommunicationType>Synchronous</CommunicationType>
+      <ClockSource>External</ClockSource>
+      <ClockEdge>Negative</ClockEdge>
+      <Endianness>LittleEndian</Endianness>
+      <DataBusWidth>Bit16</DataBusWidth>
+      <AddressBuswidth>0</AddressBuswidth>
+    </InterfaceSetting>
+  </InterfaceDefination>
+  <Signals>
+    <Signal ElementId="INPUT0" SignalType="Input" SpecialFunction="None">
+      <DisplayName>LV</DisplayName>
+      <GPIOPinNumber>GPIO_28</GPIOPinNumber>
+      <Polarity>ActiveHigh</Polarity>
+    </Signal>
+    <Signal ElementId="INPUT1" SignalType="Input" SpecialFunction="None">
+      <DisplayName>FV</DisplayName>
+      <GPIOPinNumber>GPIO_29</GPIOPinNumber>
+      <Polarity>ActiveHigh</Polarity>
+    </Signal>
+    <Signal ElementId="OUTPUT0" SignalType="Output" SpecialFunction="None">
+      <DisplayName>nLDAC</DisplayName>
+      <GPIOPinNumber>GPIO_17</GPIOPinNumber>
+      <IntialValue>High</IntialValue>
+      <Polarity>ActiveHigh</Polarity>
+      <Delay>Alpha</Delay>
+      <AssetionType>Toggle</AssetionType>
+    </Signal>
+    <Signal ElementId="OUTPUT1" SignalType="Output" SpecialFunction="None">
+      <DisplayName>nSHDN</DisplayName>
+      <GPIOPinNumber>GPIO_18</GPIOPinNumber>
+      <IntialValue>High</IntialValue>
+      <Polarity>ActiveHigh</Polarity>
+      <Delay>Alpha</Delay>
+      <AssetionType>Assert</AssetionType>
+    </Signal>
+    <Signal ElementId="OUTPUT2" SignalType="Output" SpecialFunction="None">
+      <DisplayName>OUTPUT2</DisplayName>
+      <GPIOPinNumber>GPIO_20</GPIOPinNumber>
+      <IntialValue>Low</IntialValue>
+      <Polarity>ActiveHigh</Polarity>
+      <Delay>Alpha</Delay>
+      <AssetionType>Assert</AssetionType>
+    </Signal>
+    <Signal ElementId="OUTPUT4" SignalType="Output" SpecialFunction="None">
+      <DisplayName>OUTPUT4</DisplayName>
+      <GPIOPinNumber>GPIO_22</GPIOPinNumber>
+      <IntialValue>Low</IntialValue>
+      <Polarity>ActiveHigh</Polarity>
+      <Delay>Alpha</Delay>
+      <AssetionType>Assert</AssetionType>
+    </Signal>
+    <Signal ElementId="INPUT2" SignalType="Input" SpecialFunction="None">
+      <DisplayName>RecordTrig</DisplayName>
+      <GPIOPinNumber>GPIO_21</GPIOPinNumber>
+      <Polarity>ActiveHigh</Polarity>
+    </Signal>
+  </Signals>
+  <StateMachine>
+    <AddressCounter />
+    <DataCounter />
+    <ControlCounter />
+    <AddressComparator />
+    <DataComparator />
+    <ControlComparator />
+    <DRQ />
+    <AddrData />
+    <State ElementId="STARTSTATE0" StateType="StartState">
+      <DisplayName>START</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+    </State>
+    <State ElementId="STATE0" StateType="NormalState">
+      <DisplayName>IDLE</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+    </State>
+    <State ElementId="STATE1" StateType="NormalState">
+      <DisplayName>WAIT_FOR_FRAME_START</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="LD_DATA_COUNT0" ActionType="LD_DATA_COUNT">
+        <CounterType>Up</CounterType>
+        <CounterLoadValue>0</CounterLoadValue>
+        <CounterLimit>8183</CounterLimit>
+        <CounterReloadEnable>Disable</CounterReloadEnable>
+        <CounterIncrement>1</CounterIncrement>
+        <CounterInterrupt>Mask</CounterInterrupt>
+      </Action>
+      <Action ElementId="LD_ADDR_COUNT0" ActionType="LD_ADDR_COUNT">
+        <CounterType>Up</CounterType>
+        <CounterLoadValue>0</CounterLoadValue>
+        <CounterLimit>8183</CounterLimit>
+        <CounterReloadEnable>Disable</CounterReloadEnable>
+        <CounterIncrement>1</CounterIncrement>
+        <CounterInterrupt>Mask</CounterInterrupt>
+      </Action>
+    </State>
+    <State ElementId="STATE12" StateType="NormalState">
+      <DisplayName>PARTIAL_BUF_IN_SCK0</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <State ElementId="STATE14" StateType="NormalState">
+      <DisplayName>WAIT_SYNC1A</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="CMP_DATA0" ActionType="CMP_DATA">
+        <ComparatorValue>0</ComparatorValue>
+        <ComparatorUnMaskValue>255</ComparatorUnMaskValue>
+        <ComparatorToggleMode>MatchMode</ComparatorToggleMode>
+        <ComparatorInterrupt>Mask</ComparatorInterrupt>
+      </Action>
+      <Action ElementId="DR_GPIO0" ActionType="DR_GPIO">
+        <ControlPinName>OUTPUT2</ControlPinName>
+      </Action>
+    </State>
+    <State ElementId="STATE2" StateType="NormalState">
+      <DisplayName>FULL_BUF_IN_SCK1</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <State ElementId="STATE6" StateType="NormalState">
+      <DisplayName>WAIT_NEW_LV1</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+    </State>
+    <State ElementId="STATE26" StateType="NormalState">
+      <DisplayName>WAIT_SYNC2A</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="CMP_DATA0" ActionType="CMP_DATA">
+        <ComparatorValue>0</ComparatorValue>
+        <ComparatorUnMaskValue>255</ComparatorUnMaskValue>
+        <ComparatorToggleMode>MatchMode</ComparatorToggleMode>
+        <ComparatorInterrupt>Mask</ComparatorInterrupt>
+      </Action>
+    </State>
+    <State ElementId="STATE5" StateType="NormalState">
+      <DisplayName>PUSH_DATA_SCK0</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="COUNT_DATA0" ActionType="COUNT_DATA" />
+      <Action ElementId="IN_DATA0" ActionType="IN_DATA">
+        <DataSourceSink>Socket</DataSourceSink>
+        <ThreadNumber>Thread0</ThreadNumber>
+        <SampleData>True</SampleData>
+        <WriteDataIntoDataSink>True</WriteDataIntoDataSink>
+      </Action>
+      <Action ElementId="LD_ADDR_COUNT0" ActionType="LD_ADDR_COUNT">
+        <CounterType>Up</CounterType>
+        <CounterLoadValue>0</CounterLoadValue>
+        <CounterLimit>8183</CounterLimit>
+        <CounterReloadEnable>Disable</CounterReloadEnable>
+        <CounterIncrement>1</CounterIncrement>
+        <CounterInterrupt>Mask</CounterInterrupt>
+      </Action>
+      <Action ElementId="CMP_DATA0" ActionType="CMP_DATA">
+        <ComparatorValue>0</ComparatorValue>
+        <ComparatorUnMaskValue>255</ComparatorUnMaskValue>
+        <ComparatorToggleMode>MatchMode</ComparatorToggleMode>
+        <ComparatorInterrupt>Mask</ComparatorInterrupt>
+      </Action>
+      <Action ElementId="DR_GPIO0" ActionType="DR_GPIO">
+        <ControlPinName>OUTPUT4</ControlPinName>
+      </Action>
+    </State>
+    <State ElementId="STATE8" StateType="NormalState">
+      <DisplayName>PUSH_DATA_SCK2</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="COUNT_ADDR0" ActionType="COUNT_ADDR" />
+      <Action ElementId="IN_DATA0" ActionType="IN_DATA">
+        <DataSourceSink>Socket</DataSourceSink>
+        <ThreadNumber>Thread1</ThreadNumber>
+        <SampleData>True</SampleData>
+        <WriteDataIntoDataSink>True</WriteDataIntoDataSink>
+      </Action>
+      <Action ElementId="LD_DATA_COUNT0" ActionType="LD_DATA_COUNT">
+        <CounterType>Up</CounterType>
+        <CounterLoadValue>0</CounterLoadValue>
+        <CounterLimit>8183</CounterLimit>
+        <CounterReloadEnable>Disable</CounterReloadEnable>
+        <CounterIncrement>1</CounterIncrement>
+        <CounterInterrupt>Mask</CounterInterrupt>
+      </Action>
+      <Action ElementId="CMP_DATA0" ActionType="CMP_DATA">
+        <ComparatorValue>0</ComparatorValue>
+        <ComparatorUnMaskValue>255</ComparatorUnMaskValue>
+        <ComparatorToggleMode>MatchMode</ComparatorToggleMode>
+        <ComparatorInterrupt>Mask</ComparatorInterrupt>
+      </Action>
+    </State>
+    <State ElementId="STATE22" StateType="NormalState">
+      <DisplayName>CNTRL_CNT_HIT2</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+    </State>
+    <State ElementId="STATE10" StateType="NormalState">
+      <DisplayName>END_PARTIAL_LV2</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="LD_ADDR_COUNT0" ActionType="LD_ADDR_COUNT">
+        <CounterType>Up</CounterType>
+        <CounterLoadValue>0</CounterLoadValue>
+        <CounterLimit>8183</CounterLimit>
+        <CounterReloadEnable>Disable</CounterReloadEnable>
+        <CounterIncrement>1</CounterIncrement>
+        <CounterInterrupt>Mask</CounterInterrupt>
+      </Action>
+    </State>
+    <State ElementId="STATE13" StateType="NormalState">
+      <DisplayName>END_PARTIAL_LV1</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="LD_DATA_COUNT0" ActionType="LD_DATA_COUNT">
+        <CounterType>Up</CounterType>
+        <CounterLoadValue>0</CounterLoadValue>
+        <CounterLimit>8183</CounterLimit>
+        <CounterReloadEnable>Disable</CounterReloadEnable>
+        <CounterIncrement>1</CounterIncrement>
+        <CounterInterrupt>Mask</CounterInterrupt>
+      </Action>
+    </State>
+    <State ElementId="STATE16" StateType="NormalState">
+      <DisplayName>FULL_BUF_IN_SCK0</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <State ElementId="STATE19" StateType="NormalState">
+      <DisplayName>WAIT_NEW_LV2</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+    </State>
+    <State ElementId="STATE20" StateType="NormalState">
+      <DisplayName>PARTIAL_BUF_IN_SCK1</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <State ElementId="STATE21" StateType="NormalState">
+      <DisplayName>CNTRL_CNT_HIT1</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+    </State>
+    <State ElementId="STATE23" StateType="NormalState">
+      <DisplayName>CPU_CHG_REG</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <State ElementId="STATE28" StateType="NormalState">
+      <DisplayName>CPU_CHG_REG2</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <State ElementId="STATE30" StateType="NormalState">
+      <DisplayName>WAIT_SYNC2D</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="CMP_DATA0" ActionType="CMP_DATA">
+        <ComparatorValue>0</ComparatorValue>
+        <ComparatorUnMaskValue>255</ComparatorUnMaskValue>
+        <ComparatorToggleMode>MatchMode</ComparatorToggleMode>
+        <ComparatorInterrupt>Mask</ComparatorInterrupt>
+      </Action>
+    </State>
+    <State ElementId="STATE29" StateType="NormalState">
+      <DisplayName>WAIT_SYNC1D</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="CMP_DATA0" ActionType="CMP_DATA">
+        <ComparatorValue>0</ComparatorValue>
+        <ComparatorUnMaskValue>255</ComparatorUnMaskValue>
+        <ComparatorToggleMode>MatchMode</ComparatorToggleMode>
+        <ComparatorInterrupt>Mask</ComparatorInterrupt>
+      </Action>
+    </State>
+    <State ElementId="STATE11" StateType="NormalState">
+      <DisplayName>CPU_CHG_BACK1</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <State ElementId="STATE15" StateType="NormalState">
+      <DisplayName>CPU_CHG_BACK2</DisplayName>
+      <RepeatUntillNextTransition>True</RepeatUntillNextTransition>
+      <RepeatCount>0</RepeatCount>
+      <Action ElementId="INTR_CPU0" ActionType="INTR_CPU" />
+    </State>
+    <Transition ElementId="TRANSITION20" SourceState="STATE21" DestinationState="STATE6" Equation="!DATA_CNT_HIT" />
+    <Transition ElementId="TRANSITION45" SourceState="STATE14" DestinationState="STATE23" Equation="DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION17" SourceState="STATE22" DestinationState="STATE10" Equation="ADDR_CNT_HIT" />
+    <Transition ElementId="TRANSITION21" SourceState="STATE21" DestinationState="STATE13" Equation="DATA_CNT_HIT" />
+    <Transition ElementId="TRANSITION18" SourceState="STATE22" DestinationState="STATE19" Equation="!ADDR_CNT_HIT" />
+    <Transition ElementId="TRANSITION46" SourceState="STATE26" DestinationState="STATE28" Equation="DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION3" SourceState="STATE6" DestinationState="STATE14" Equation="FV&amp;LV" />
+    <Transition ElementId="TRANSITION34" SourceState="STATE13" DestinationState="STATE26" Equation="FV&amp;LV" />
+    <Transition ElementId="TRANSITION0" SourceState="STARTSTATE0" DestinationState="STATE0" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION2" SourceState="STATE1" DestinationState="STATE14" Equation="FV&amp;LV" />
+    <Transition ElementId="TRANSITION1" SourceState="STATE0" DestinationState="STATE1" Equation="!FV" />
+    <Transition ElementId="TRANSITION47" SourceState="STATE23" DestinationState="STATE29" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION13" SourceState="STATE5" DestinationState="STATE8" Equation="DATA_CNT_HIT&amp;!DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION43" SourceState="STATE2" DestinationState="STATE0" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION11" SourceState="STATE10" DestinationState="STATE2" Equation="!FV" />
+    <Transition ElementId="TRANSITION42" SourceState="STATE16" DestinationState="STATE0" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION14" SourceState="STATE8" DestinationState="STATE5" Equation="ADDR_CNT_HIT&amp;!DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION27" SourceState="STATE5" DestinationState="STATE21" Equation="DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION38" SourceState="STATE30" DestinationState="STATE15" Equation="DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION19" SourceState="STATE13" DestinationState="STATE16" Equation="!FV" />
+    <Transition ElementId="TRANSITION30" SourceState="STATE8" DestinationState="STATE22" Equation="DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION31" SourceState="STATE29" DestinationState="STATE11" Equation="DATA_CMP_MATCH" />
+    <Transition ElementId="TRANSITION25" SourceState="STATE19" DestinationState="STATE20" Equation="!FV" />
+    <Transition ElementId="TRANSITION36" SourceState="STATE19" DestinationState="STATE26" Equation="FV&amp;LV" />
+    <Transition ElementId="TRANSITION39" SourceState="STATE15" DestinationState="STATE8" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION32" SourceState="STATE11" DestinationState="STATE5" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION44" SourceState="STATE20" DestinationState="STATE0" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION35" SourceState="STATE10" DestinationState="STATE14" Equation="FV&amp;LV" />
+    <Transition ElementId="TRANSITION52" SourceState="STATE28" DestinationState="STATE30" Equation="LOGIC_ONE" />
+    <Transition ElementId="TRANSITION55" SourceState="STATE6" DestinationState="STATE12" Equation="!FV" />
+  </StateMachine>
+</GPIFIIModel>

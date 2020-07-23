@@ -1,0 +1,56 @@
+//Communication over saturation channel
+#define RECORD_START		0x01
+#define RECORD_END			0x02
+#define SET_CMOS_SETTINGS	0x03
+     //For setting MS FPS
+#define INIT_F				0x10
+#define FPS_8				0x11
+#define FPS_30				0x12
+#define	FPS_60				0x13
+#define	FPS_100				0x14
+#define	FPS_153				0x15
+#define	FPS_200				0x16
+#define	FPS_250				0x17
+#define	FPS_293				0x18
+#define	FPS_500				0x25
+#define	FPS_700				0x26
+#define	FPS_400				0x27
+#define	FPS_1				0x28
+#define FPS_2				0x29
+#define FPS_3				0x3B
+#define FPS_4				0x3C
+#define INIT_WIN			0x19
+#define WIN0				0x1A
+#define WIN50				0x1B
+#define WIN100				0x1C
+#define WIN150				0x1D
+#define WIN200				0x1E
+#define WIN250				0x1F
+#define WIN300				0x20
+#define WIN350				0x21
+#define WIN400				0x22
+#define WIN450				0x30
+#define WIN500				0x31
+#define WIN550				0x32
+#define WIN600				0x33
+#define WIN650				0x34
+#define WIN700				0x35
+#define WIN750				0x36
+#define WIN800				0x37
+#define WIN850				0x38
+#define WIN900				0x39
+#define WIN950				0x3A
+#define HGC_ON				0x23
+#define HGC_OFF				0x24
+/*
+#define FPS5				0x11
+#define FPS10				0x12
+#define	FPS15				0x13
+#define	FPS20				0x14
+#define FPS30				0x15
+#define	FPS60				0x16
+*/
+#define GPIO_TEST       22
+#define TRIG_RECORD_EXT	21
+#define GPIO_SHIFT		20
+#define GPIO_MASK		0b00000111
